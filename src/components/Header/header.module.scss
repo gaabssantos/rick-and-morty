@@ -1,0 +1,25 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 27px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29.25px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 35px;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  border: 1px solid #FF9800;
+  padding: 7px 22px;
+  border-radius: 9px;
+  text-transform: uppercase;
+}
