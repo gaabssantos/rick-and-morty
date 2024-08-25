@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.footerContainer {
+  background-color: $terciary;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.socialMedia {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  svg {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.devName {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

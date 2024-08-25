@@ -1,9 +1,9 @@
 @import "../../styles/variables.scss";
 
 .container {
-  background-color: $secondary;
+  background-color: $primary;
   color: $white;
-  padding: 95px 33px;
+  padding: 95px 33px 28px 33px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
