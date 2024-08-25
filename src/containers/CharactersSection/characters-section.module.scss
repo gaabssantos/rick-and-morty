@@ -2,9 +2,21 @@
 
 .container {
   background-color: $secondary;
+  color: $white;
   padding: 95px 33px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 27px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #9e9e9e;
+
+  svg, span {
+    cursor: pointer;
+  }
 }
