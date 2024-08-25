@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.container {
+  background-color: $secondary;
+  padding: 95px 33px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 27px;
+}

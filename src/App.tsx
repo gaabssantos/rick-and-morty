@@ -1,4 +1,5 @@
 import Header from "./components/Header/header.component";
+import CharactersSection from "./containers/CharactersSection/characters-section.container";
 import NameHeader from "./containers/NameHeader/name-header.container";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div>
       <Header />
       <NameHeader />
-      <h1>Hello!</h1>
+      <CharactersSection />
     </div>
   );
 }
