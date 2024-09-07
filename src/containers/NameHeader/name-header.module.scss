@@ -16,5 +16,9 @@
     font-style: normal;
     font-weight: 900;
     line-height: 111.375px;
+
+    @media (max-width: 600px) {
+      font-size: 80px;
+    }
   }
 }

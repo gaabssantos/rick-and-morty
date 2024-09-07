@@ -2,14 +2,15 @@
 
 .cardContainer {
   background-color: $secondary;
-  width: 32%;
   border-radius: 9px;
   display: flex;
+  width: 48% !important;
 
   img {
+    height: 100%;
+    width: 40%;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
-    height: 100%;
   }
 
   span {
@@ -40,13 +41,27 @@
 
   @media (min-width: 801px) and (max-width: 1500px) {
     flex-wrap: wrap;
-    width: 80%;
-
-    img {
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 9px;
-    }
   }
+}
+
+.statusCharacter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aliveCircle {
+  width: 5px;
+  height: 5px;
+  background-color: #5C4;
+  border-radius: 50px;
+}
+
+.deadCircle {
+  width: 5px;
+  height: 5px;
+  background-color: #D63D2E;
+  border-radius: 50px;
 }
 
 .cardContent {
