@@ -6,19 +6,17 @@ import NameHeader from "./containers/NameHeader/name-header.container";
 import { api } from "./api";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({ results: [] });
 
   useEffect(() => {
     const fetch = async (url?: string) => {
-      const {results} = await api(url);
+      const data = await api(url);
 
-      setData(results);
+      setData(data);
     };
 
     fetch();
   }, []);
-
-  console.log(data);
 
   return (
     <div>

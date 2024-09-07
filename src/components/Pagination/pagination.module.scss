@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #9e9e9e;
+
+  svg,
+  span {
+    cursor: pointer;
+  }
+}
+
+.blockPage {
+  cursor: no-drop !important;
+}
+
+.pagination .active {
+  color: $white;
+}

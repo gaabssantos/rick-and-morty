@@ -12,16 +12,3 @@
   gap: 27px;
   padding: 95px 33px 28px 33px;
 }
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  color: #9e9e9e;
-
-  svg,
-  span {
-    cursor: pointer;
-  }
-}

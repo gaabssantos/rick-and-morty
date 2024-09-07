@@ -1,6 +1,6 @@
 import CharactersCard from "../../components/CharactersCard/characters-card.component";
+import Pagination from "../../components/Pagination/pagination.component";
 import styles from "./characters-section.module.scss";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 type CharactersProps = {
   id: number;
@@ -12,15 +12,15 @@ type CharactersProps = {
   image: string;
 };
 
-type CharactersSectionProps = {
-  data: CharactersProps[];
+export type CharactersSectionProps = {
+  data: { results: CharactersProps[] };
 };
 
 const CharactersSection = ({ data }: CharactersSectionProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.charactersContainer}>
-        {data.slice(0, 6).map((character) => (
+        {data?.results?.slice(0, 6)?.map((character) => (
           <CharactersCard
             name={character.name}
             status={character.status}
@@ -32,12 +32,7 @@ const CharactersSection = ({ data }: CharactersSectionProps) => {
           />
         ))}
       </div>
-      <div className={styles.pagination}>
-        <FaArrowLeft />
-        <span>1</span>
-        <span>2</span>
-        <FaArrowRight />
-      </div>
+      <Pagination />
     </div>
   );
 };
