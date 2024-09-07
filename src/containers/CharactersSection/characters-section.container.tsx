@@ -13,10 +13,19 @@ type CharactersProps = {
 };
 
 export type CharactersSectionProps = {
-  data: { results: CharactersProps[] };
+  data: {
+    results: CharactersProps[];
+    info: { count: number; next: string; prev: string; pages: number };
+  };
+  fetchNextPage: (url: string) => void;
+  fetchPreviousPage: (url: string) => void;
 };
 
-const CharactersSection = ({ data }: CharactersSectionProps) => {
+const CharactersSection = ({
+  data,
+  fetchNextPage,
+  fetchPreviousPage,
+}: CharactersSectionProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.charactersContainer}>
@@ -32,7 +41,11 @@ const CharactersSection = ({ data }: CharactersSectionProps) => {
           />
         ))}
       </div>
-      <Pagination />
+      <Pagination
+        pagination={data?.info}
+        fetchNextPage={fetchNextPage}
+        fetchPreviousPage={fetchPreviousPage}
+      />
     </div>
   );
 };

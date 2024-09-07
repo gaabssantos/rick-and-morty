@@ -6,23 +6,40 @@ import NameHeader from "./containers/NameHeader/name-header.container";
 import { api } from "./api";
 
 function App() {
-  const [data, setData] = useState({ results: [] });
+  const [data, setData] = useState({
+    results: [],
+    info: { count: 0, next: "", prev: "", pages: 0 },
+  });
+
+  const fetch = async (url?: string) => {
+    const data = await api(url);
+
+    setData(data);
+  };
 
   useEffect(() => {
-    const fetch = async (url?: string) => {
-      const data = await api(url);
-
-      setData(data);
-    };
-
     fetch();
   }, []);
+
+  const fetchNextPage = async (url: string) => {
+    fetch(url);
+  };
+
+  const fetchPreviousPage = async (url: string) => {
+    fetch(url);
+  };
+
+  console.log(data);
 
   return (
     <div>
       <Header />
       <NameHeader />
-      <CharactersSection data={data} />
+      <CharactersSection
+        data={data}
+        fetchNextPage={(url) => fetchNextPage(url)}
+        fetchPreviousPage={(url) => fetchPreviousPage(url)}
+      />
       <Footer />
     </div>
   );
