@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
@@ -13,13 +15,24 @@
   align-items: center;
   list-style-type: none;
   gap: 35px;
+
+  li {
+    cursor: pointer;
+  }
 }
 
 .btn {
   border: 0;
   background: transparent;
-  border: 1px solid #FF9800;
+  border: 1px solid #ff9800;
   padding: 7px 22px;
   border-radius: 9px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #ff9800;
+    color: $white;
+  }
 }
