@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+<h1>📝 Introdução</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>Este é um projeto interativo desenvolvido para acessar dados da série Rick and Morty, utilizando a API pública da série. A aplicação oferece uma interface amigável e intuitiva, que permite aos usuários explorar informações detalhadas sobre os personagens, episódios e locais do universo da série.</p>
 
-Currently, two official plugins are available:
+<h1>🖥️ Tecnologias</h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+  <li>React</li>
+  <li>TypeScript</li>
+  <li>Styled Components</li>
+  <li>Axios</li>
+  <li>SASS</li>
+  <li>ESLint</li>
+  <li>Prettier</li>
+</ul>
 
-## Expanding the ESLint configuration
+<h1>🌐 Deploy</h1>
+<a href="https://devbank-five.vercel.app">Clique aqui para visitar meu projeto!</a>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h1>🖼️ Imagens</h1>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![image](https://github.com/user-attachments/assets/1ff9a2c2-6ad4-4397-8248-9d76c4616883)
+![image](https://github.com/user-attachments/assets/1cc7091e-10fc-42d9-bf78-f0df1a9bc119)
+![image](https://github.com/user-attachments/assets/0e0a6f93-4712-472b-a4a2-19ffe8480a24)
