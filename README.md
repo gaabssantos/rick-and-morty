@@ -7,7 +7,6 @@
 <ul>
   <li>React</li>
   <li>TypeScript</li>
-  <li>Styled Components</li>
   <li>Axios</li>
   <li>SASS</li>
   <li>ESLint</li>
